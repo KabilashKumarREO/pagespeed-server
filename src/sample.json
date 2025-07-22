@@ -1,0 +1,3687 @@
+{
+  "result": {
+    "categories": {
+      "accessibility": {
+        "id": "accessibility",
+        "title": "Accessibility",
+        "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developer.chrome.com/docs/lighthouse/accessibility/). Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so [manual testing](https://web.dev/articles/how-to-review) is also encouraged.",
+        "score": 0.77,
+        "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://web.dev/articles/how-to-review).",
+        "auditRefs": [
+          {
+            "id": "accesskeys",
+            "weight": 0,
+            "group": "a11y-navigation"
+          },
+          {
+            "id": "aria-allowed-attr",
+            "weight": 10,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-allowed-role",
+            "weight": 1,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-command-name",
+            "weight": 7,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-conditional-attr",
+            "weight": 7,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-deprecated-role",
+            "weight": 1,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-dialog-name",
+            "weight": 7,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-hidden-body",
+            "weight": 10,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-hidden-focus",
+            "weight": 7,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-input-field-name",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-meter-name",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-progressbar-name",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "weight": 7,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-required-attr",
+            "weight": 10,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-required-children",
+            "weight": 10,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-required-parent",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-roles",
+            "weight": 7,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-text",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-toggle-field-name",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-tooltip-name",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-treeitem-name",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-valid-attr-value",
+            "weight": 10,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "aria-valid-attr",
+            "weight": 10,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "button-name",
+            "weight": 10,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "bypass",
+            "weight": 0,
+            "group": "a11y-navigation"
+          },
+          {
+            "id": "color-contrast",
+            "weight": 7,
+            "group": "a11y-color-contrast"
+          },
+          {
+            "id": "definition-list",
+            "weight": 0,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "dlitem",
+            "weight": 0,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "document-title",
+            "weight": 7,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "duplicate-id-aria",
+            "weight": 0,
+            "group": "a11y-aria"
+          },
+          {
+            "id": "form-field-multiple-labels",
+            "weight": 0,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "frame-title",
+            "weight": 7,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "heading-order",
+            "weight": 3,
+            "group": "a11y-navigation"
+          },
+          {
+            "id": "html-has-lang",
+            "weight": 7,
+            "group": "a11y-language"
+          },
+          {
+            "id": "html-lang-valid",
+            "weight": 7,
+            "group": "a11y-language"
+          },
+          {
+            "id": "html-xml-lang-mismatch",
+            "weight": 0,
+            "group": "a11y-language"
+          },
+          {
+            "id": "image-alt",
+            "weight": 10,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "image-redundant-alt",
+            "weight": 1,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "input-button-name",
+            "weight": 10,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "input-image-alt",
+            "weight": 0,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "label",
+            "weight": 7,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "link-in-text-block",
+            "weight": 7,
+            "group": "a11y-color-contrast"
+          },
+          {
+            "id": "link-name",
+            "weight": 7,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "list",
+            "weight": 7,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "listitem",
+            "weight": 7,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "meta-refresh",
+            "weight": 0,
+            "group": "a11y-best-practices"
+          },
+          {
+            "id": "meta-viewport",
+            "weight": 10,
+            "group": "a11y-best-practices"
+          },
+          {
+            "id": "object-alt",
+            "weight": 0,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "select-name",
+            "weight": 0,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "skip-link",
+            "weight": 3,
+            "group": "a11y-names-labels"
+          },
+          {
+            "id": "tabindex",
+            "weight": 7,
+            "group": "a11y-navigation"
+          },
+          {
+            "id": "table-duplicate-name",
+            "weight": 0,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "target-size",
+            "weight": 7,
+            "group": "a11y-best-practices"
+          },
+          {
+            "id": "td-headers-attr",
+            "weight": 0,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "th-has-data-cells",
+            "weight": 0,
+            "group": "a11y-tables-lists"
+          },
+          {
+            "id": "valid-lang",
+            "weight": 0,
+            "group": "a11y-language"
+          },
+          {
+            "id": "video-caption",
+            "weight": 0,
+            "group": "a11y-audio-video"
+          },
+          {
+            "id": "focusable-controls",
+            "weight": 0
+          },
+          {
+            "id": "interactive-element-affordance",
+            "weight": 0
+          },
+          {
+            "id": "logical-tab-order",
+            "weight": 0
+          },
+          {
+            "id": "visual-order-follows-dom",
+            "weight": 0
+          },
+          {
+            "id": "focus-traps",
+            "weight": 0
+          },
+          {
+            "id": "managed-focus",
+            "weight": 0
+          },
+          {
+            "id": "use-landmarks",
+            "weight": 0
+          },
+          {
+            "id": "offscreen-content-hidden",
+            "weight": 0
+          },
+          {
+            "id": "custom-controls-labels",
+            "weight": 0
+          },
+          {
+            "id": "custom-controls-roles",
+            "weight": 0
+          },
+          {
+            "id": "empty-heading",
+            "weight": 0,
+            "group": "hidden"
+          },
+          {
+            "id": "identical-links-same-purpose",
+            "weight": 0,
+            "group": "hidden"
+          },
+          {
+            "id": "landmark-one-main",
+            "weight": 0,
+            "group": "hidden"
+          },
+          {
+            "id": "label-content-name-mismatch",
+            "weight": 0,
+            "group": "hidden"
+          },
+          {
+            "id": "table-fake-caption",
+            "weight": 0,
+            "group": "hidden"
+          },
+          {
+            "id": "td-has-header",
+            "weight": 0,
+            "group": "hidden"
+          }
+        ]
+      }
+    },
+    "categoryGroups": {
+      "a11y-aria": {
+        "title": "ARIA",
+        "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "a11y-best-practices": {
+        "title": "Best practices",
+        "description": "These items highlight common accessibility best practices."
+      },
+      "a11y-names-labels": {
+        "title": "Names and labels",
+        "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "insights": {
+        "title": "Insights",
+        "description": "These insights are also available in the Chrome DevTools Performance Panel - [record a trace](https://developer.chrome.com/docs/devtools/performance/reference) to view more detailed information."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "description": "More information about the performance of your application. These numbers don't [directly affect](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) the Performance score."
+      },
+      "a11y-color-contrast": {
+        "title": "Contrast",
+        "description": "These are opportunities to improve the legibility of your content."
+      },
+      "metrics": {
+        "title": "Metrics"
+      },
+      "seo-crawl": {
+        "title": "Crawling and Indexing",
+        "description": "To appear in search results, crawlers need access to your app."
+      },
+      "a11y-audio-video": {
+        "title": "Audio and video",
+        "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+      },
+      "seo-content": {
+        "title": "Content Best Practices",
+        "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      },
+      "best-practices-trust-safety": {
+        "title": "Trust and Safety"
+      },
+      "a11y-navigation": {
+        "title": "Navigation",
+        "description": "These are opportunities to improve keyboard navigation in your application."
+      },
+      "best-practices-browser-compat": {
+        "title": "Browser Compatibility"
+      },
+      "best-practices-general": {
+        "title": "General"
+      },
+      "a11y-language": {
+        "title": "Internationalization and localization",
+        "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+      },
+      "a11y-tables-lists": {
+        "title": "Tables and lists",
+        "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+      },
+      "seo-mobile": {
+        "title": "Mobile Friendly",
+        "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
+      },
+      "best-practices-ux": {
+        "title": "User Experience"
+      }
+    },
+    "audits": {
+      "video-caption": {
+        "id": "video-caption",
+        "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+        "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more about video captions](https://dequeuniversity.com/rules/axe/4.10/video-caption).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-progressbar-name": {
+        "id": "aria-progressbar-name",
+        "title": "ARIA `progressbar` elements have accessible names",
+        "description": "When a `progressbar` element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to label `progressbar` elements](https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "image-redundant-alt": {
+        "id": "image-redundant-alt",
+        "title": "Image elements do not have `[alt]` attributes that are redundant text.",
+        "description": "Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": [
+            {
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "key": "node",
+              "label": "Failing Elements"
+            }
+          ]
+        }
+      },
+      "logical-tab-order": {
+        "id": "logical-tab-order",
+        "title": "The page has a logical tab order",
+        "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more about logical tab ordering](https://developer.chrome.com/docs/lighthouse/accessibility/logical-tab-order/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "aria-deprecated-role": {
+        "id": "aria-deprecated-role",
+        "title": "Deprecated ARIA roles were not used",
+        "description": "Deprecated ARIA roles may not be processed correctly by assistive technology. [Learn more about deprecated ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-deprecated-role).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              }
+            }
+          ],
+          "items": []
+        }
+      },
+      "accesskeys": {
+        "id": "accesskeys",
+        "title": "`[accesskey]` values are unique",
+        "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more about access keys](https://dequeuniversity.com/rules/axe/4.10/accesskeys).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "interactive-element-affordance": {
+        "id": "interactive-element-affordance",
+        "title": "Interactive elements indicate their purpose and state",
+        "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn how to decorate interactive elements with affordance hints](https://developer.chrome.com/docs/lighthouse/accessibility/interactive-element-affordance/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "list": {
+        "id": "list",
+        "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+        "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.10/list).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "key": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "label": "Failing Elements",
+              "valueType": "node"
+            }
+          ],
+          "items": [],
+          "type": "table"
+        }
+      },
+      "td-has-header": {
+        "id": "td-has-header",
+        "title": "`<td>` elements in a large `<table>` have one or more table headers.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring that `<td>` elements in a large table (3 or more cells in width and height) have an associated table header may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.10/td-has-header).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "target-size": {
+        "id": "target-size",
+        "title": "Touch targets do not have sufficient size or spacing.",
+        "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.10/target-size).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "debugData": {
+            "tags": ["cat.sensory-and-visual-cues", "wcag22aa", "wcag258"],
+            "type": "debugdata",
+            "impact": "serious"
+          },
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "selector": "div.elementor-element > div.elementor-widget-container > p > a",
+                      "snippet": "<a href=\"tel:+440020 7183 0374\">",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,P,2,A",
+                      "boundingRect": {
+                        "left": 349,
+                        "top": 10957,
+                        "bottom": 10971,
+                        "width": 145,
+                        "right": 494,
+                        "height": 14
+                      },
+                      "lhId": "1-51-A",
+                      "nodeLabel": "div.elementor-element > div.elementor-widget-container > p > a",
+                      "type": "node"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "boundingRect": {
+                  "width": 131,
+                  "right": 480,
+                  "left": 349,
+                  "height": 14,
+                  "top": 10936,
+                  "bottom": 10950
+                },
+                "explanation": "Fix any of the following:\n  Target has insufficient size (131px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20.2px instead of at least 24px.",
+                "selector": "div.elementor-element > div.elementor-widget-container > p > a",
+                "snippet": "<a href=\"mailto:info@reodigital.com\">",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,P,0,A",
+                "type": "node",
+                "lhId": "1-50-A",
+                "nodeLabel": "div.elementor-element > div.elementor-widget-container > p > a"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,P,0,A",
+                      "lhId": "1-50-A",
+                      "selector": "div.elementor-element > div.elementor-widget-container > p > a",
+                      "nodeLabel": "div.elementor-element > div.elementor-widget-container > p > a",
+                      "type": "node",
+                      "snippet": "<a href=\"mailto:info@reodigital.com\">",
+                      "boundingRect": {
+                        "left": 349,
+                        "width": 131,
+                        "top": 10936,
+                        "right": 480,
+                        "bottom": 10950,
+                        "height": 14
+                      }
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "boundingRect": {
+                  "top": 10957,
+                  "left": 349,
+                  "bottom": 10971,
+                  "width": 145,
+                  "right": 494,
+                  "height": 14
+                },
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,P,2,A",
+                "snippet": "<a href=\"tel:+440020 7183 0374\">",
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (145px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20.2px instead of at least 24px.",
+                "nodeLabel": "div.elementor-element > div.elementor-widget-container > p > a",
+                "selector": "div.elementor-element > div.elementor-widget-container > p > a",
+                "lhId": "1-51-A"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/personalisation/\">",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-53-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "left": 668,
+                        "right": 986,
+                        "bottom": 10975,
+                        "top": 10954,
+                        "width": 319,
+                        "height": 21
+                      },
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,1,LI,0,A"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,0,LI,0,A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "boundingRect": {
+                  "left": 668,
+                  "height": 21,
+                  "top": 10933,
+                  "bottom": 10954,
+                  "right": 986,
+                  "width": 319
+                },
+                "snippet": "<a href=\"https://www.reodigital.com/full-service-cro/\">",
+                "lhId": "1-52-A",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "type": "node"
+              }
+            },
+            {
+              "node": {
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,1,LI,0,A",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "boundingRect": {
+                  "top": 10954,
+                  "height": 21,
+                  "width": 319,
+                  "right": 986,
+                  "bottom": 10975,
+                  "left": 668
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "lhId": "1-53-A",
+                "snippet": "<a href=\"https://www.reodigital.com/personalisation/\">",
+                "type": "node",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-52-A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,0,LI,0,A",
+                      "boundingRect": {
+                        "width": 319,
+                        "right": 986,
+                        "left": 668,
+                        "top": 10933,
+                        "height": 21,
+                        "bottom": 10954
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/full-service-cro/\">",
+                      "type": "node"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,2,LI,0,A",
+                      "lhId": "1-54-A",
+                      "boundingRect": {
+                        "right": 986,
+                        "bottom": 10996,
+                        "top": 10975,
+                        "left": 668,
+                        "width": 319,
+                        "height": 21
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/cro-enablement/\">",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"https://www.reodigital.com/personalisation/\">",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,1,LI,0,A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "type": "node",
+                      "lhId": "1-53-A",
+                      "boundingRect": {
+                        "height": 21,
+                        "left": 668,
+                        "bottom": 10975,
+                        "width": 319,
+                        "top": 10954,
+                        "right": 986
+                      }
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-55-A",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,3,LI,0,A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "bottom": 11017,
+                        "height": 21,
+                        "top": 10996,
+                        "left": 668,
+                        "right": 986,
+                        "width": 319
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/user-research/\">",
+                      "type": "node"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,2,LI,0,A",
+                "snippet": "<a href=\"https://www.reodigital.com/cro-enablement/\">",
+                "lhId": "1-54-A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "boundingRect": {
+                  "bottom": 10996,
+                  "top": 10975,
+                  "width": 319,
+                  "height": 21,
+                  "left": 668,
+                  "right": 986
+                },
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"https://www.reodigital.com/cro-enablement/\">",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,2,LI,0,A",
+                      "lhId": "1-54-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "right": 986,
+                        "height": 21,
+                        "top": 10975,
+                        "left": 668,
+                        "bottom": 10996,
+                        "width": 319
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,4,LI,0,A",
+                      "boundingRect": {
+                        "height": 21,
+                        "left": 668,
+                        "right": 986,
+                        "width": 319,
+                        "top": 11017,
+                        "bottom": 11038
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/ux-design/\">",
+                      "lhId": "1-56-A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "type": "node",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,3,LI,0,A",
+                "lhId": "1-55-A",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "snippet": "<a href=\"https://www.reodigital.com/user-research/\">",
+                "boundingRect": {
+                  "top": 10996,
+                  "bottom": 11017,
+                  "right": 986,
+                  "left": 668,
+                  "width": 319,
+                  "height": 21
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,3,LI,0,A",
+                      "type": "node",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-55-A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "width": 319,
+                        "right": 986,
+                        "height": 21,
+                        "top": 10996,
+                        "bottom": 11017,
+                        "left": 668
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/user-research/\">"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,5,LI,0,A",
+                      "lhId": "1-57-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "left": 668,
+                        "right": 986,
+                        "height": 21,
+                        "bottom": 11059,
+                        "width": 319,
+                        "top": 11038
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/accessibility/\">"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "boundingRect": {
+                  "right": 986,
+                  "width": 319,
+                  "top": 11017,
+                  "height": 21,
+                  "left": 668,
+                  "bottom": 11038
+                },
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,4,LI,0,A",
+                "snippet": "<a href=\"https://www.reodigital.com/ux-design/\">",
+                "lhId": "1-56-A",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "type": "node"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,5,LI,0,A",
+                "lhId": "1-57-A",
+                "snippet": "<a href=\"https://www.reodigital.com/accessibility/\">",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "type": "node",
+                "boundingRect": {
+                  "bottom": 11059,
+                  "right": 986,
+                  "top": 11038,
+                  "left": 668,
+                  "height": 21,
+                  "width": 319
+                }
+              },
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/ux-design/\">",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,4,LI,0,A",
+                      "lhId": "1-56-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "bottom": 11038,
+                        "right": 986,
+                        "height": 21,
+                        "left": 668,
+                        "width": 319,
+                        "top": 11017
+                      }
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "snippet": "<a href=\"https://www.reodigital.com/data-governance/\">",
+                      "boundingRect": {
+                        "left": 668,
+                        "top": 11059,
+                        "bottom": 11080,
+                        "right": 986,
+                        "height": 21,
+                        "width": 319
+                      },
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,6,LI,0,A",
+                      "lhId": "1-58-A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "snippet": "<a href=\"https://www.reodigital.com/data-governance/\">",
+                "boundingRect": {
+                  "height": 21,
+                  "width": 319,
+                  "left": 668,
+                  "top": 11059,
+                  "bottom": 11080,
+                  "right": 986
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "lhId": "1-58-A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,6,LI,0,A"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,5,LI,0,A",
+                      "snippet": "<a href=\"https://www.reodigital.com/accessibility/\">",
+                      "boundingRect": {
+                        "top": 11038,
+                        "right": 986,
+                        "height": 21,
+                        "bottom": 11059,
+                        "left": 668,
+                        "width": 319
+                      },
+                      "type": "node",
+                      "lhId": "1-57-A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,7,LI,0,A",
+                      "type": "node",
+                      "lhId": "1-59-A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/digital-analytics/\">",
+                      "boundingRect": {
+                        "right": 986,
+                        "height": 21,
+                        "width": 319,
+                        "top": 11080,
+                        "bottom": 11101,
+                        "left": 668
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "lhId": "1-58-A",
+                      "snippet": "<a href=\"https://www.reodigital.com/data-governance/\">",
+                      "boundingRect": {
+                        "height": 21,
+                        "width": 319,
+                        "top": 11059,
+                        "left": 668,
+                        "right": 986,
+                        "bottom": 11080
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,6,LI,0,A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/data-insights/\">",
+                      "type": "node",
+                      "lhId": "1-60-A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "width": 319,
+                        "right": 986,
+                        "top": 11101,
+                        "bottom": 11122,
+                        "height": 21,
+                        "left": 668
+                      },
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,8,LI,0,A"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,7,LI,0,A",
+                "type": "node",
+                "lhId": "1-59-A",
+                "snippet": "<a href=\"https://www.reodigital.com/digital-analytics/\">",
+                "boundingRect": {
+                  "left": 668,
+                  "bottom": 11101,
+                  "width": 319,
+                  "right": 986,
+                  "top": 11080,
+                  "height": 21
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px."
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "lhId": "1-59-A",
+                      "type": "node",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/digital-analytics/\">",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "bottom": 11101,
+                        "height": 21,
+                        "top": 11080,
+                        "left": 668,
+                        "width": 319,
+                        "right": 986
+                      },
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,7,LI,0,A"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,2,DIV,1,DIV,0,DIV,0,UL,8,LI,0,A",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "boundingRect": {
+                  "bottom": 11122,
+                  "width": 319,
+                  "left": 668,
+                  "height": 21,
+                  "right": 986,
+                  "top": 11101
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "type": "node",
+                "lhId": "1-60-A",
+                "snippet": "<a href=\"https://www.reodigital.com/data-insights/\">"
+              }
+            },
+            {
+              "node": {
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "type": "node",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "snippet": "<a href=\"/privacy-policy/\">",
+                "boundingRect": {
+                  "width": 319,
+                  "top": 10933,
+                  "right": 1305,
+                  "height": 21,
+                  "bottom": 10954,
+                  "left": 986
+                },
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "lhId": "1-61-A",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,0,LI,0,A"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "height": 21,
+                        "bottom": 10975,
+                        "top": 10954,
+                        "left": 986,
+                        "width": 319,
+                        "right": 1305
+                      },
+                      "snippet": "<a href=\"/cookie-policy/\">",
+                      "type": "node",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-62-A",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,1,LI,0,A"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "top": 10933,
+                        "height": 21,
+                        "right": 1305,
+                        "bottom": 10954,
+                        "width": 319,
+                        "left": 986
+                      },
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,0,LI,0,A",
+                      "snippet": "<a href=\"/privacy-policy/\">",
+                      "lhId": "1-61-A",
+                      "type": "node"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "lhId": "1-63-A",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,2,LI,0,A",
+                      "type": "node",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"/glossary/\">",
+                      "boundingRect": {
+                        "width": 319,
+                        "right": 1305,
+                        "top": 10975,
+                        "height": 21,
+                        "left": 986,
+                        "bottom": 10996
+                      },
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "snippet": "<a href=\"/cookie-policy/\">",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,1,LI,0,A",
+                "boundingRect": {
+                  "right": 1305,
+                  "width": 319,
+                  "bottom": 10975,
+                  "height": 21,
+                  "left": 986,
+                  "top": 10954
+                },
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "lhId": "1-62-A",
+                "type": "node"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"/cookie-policy/\">",
+                      "type": "node",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "height": 21,
+                        "top": 10954,
+                        "left": 986,
+                        "right": 1305,
+                        "width": 319,
+                        "bottom": 10975
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-62-A",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,1,LI,0,A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"/cro-guide/\">",
+                      "type": "node",
+                      "boundingRect": {
+                        "bottom": 11017,
+                        "right": 1305,
+                        "width": 319,
+                        "height": 21,
+                        "top": 10996,
+                        "left": 986
+                      },
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,3,LI,0,A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-64-A"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,2,LI,0,A",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "snippet": "<a href=\"/glossary/\">",
+                "type": "node",
+                "boundingRect": {
+                  "width": 319,
+                  "bottom": 10996,
+                  "right": 1305,
+                  "height": 21,
+                  "top": 10975,
+                  "left": 986
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "lhId": "1-63-A"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"/glossary/\">",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-63-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "width": 319,
+                        "left": 986,
+                        "top": 10975,
+                        "height": 21,
+                        "bottom": 10996,
+                        "right": 1305
+                      },
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,2,LI,0,A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "left": 986,
+                        "bottom": 11038,
+                        "width": 319,
+                        "right": 1305,
+                        "top": 11017,
+                        "height": 21
+                      },
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,4,LI,0,A",
+                      "lhId": "1-65-A",
+                      "snippet": "<a href=\"/isms-policy/\">"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "snippet": "<a href=\"/cro-guide/\">",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "type": "node",
+                "boundingRect": {
+                  "left": 986,
+                  "top": 10996,
+                  "bottom": 11017,
+                  "right": 1305,
+                  "width": 319,
+                  "height": 21
+                },
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,3,LI,0,A",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "lhId": "1-64-A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "snippet": "<a href=\"/isms-policy/\">",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "lhId": "1-65-A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "boundingRect": {
+                  "height": 21,
+                  "left": 986,
+                  "right": 1305,
+                  "bottom": 11038,
+                  "top": 11017,
+                  "width": 319
+                },
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,4,LI,0,A"
+              },
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,3,LI,0,A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "snippet": "<a href=\"/cro-guide/\">",
+                      "boundingRect": {
+                        "bottom": 11017,
+                        "top": 10996,
+                        "width": 319,
+                        "right": 1305,
+                        "height": 21,
+                        "left": 986
+                      },
+                      "lhId": "1-64-A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "lhId": "1-66-A",
+                      "snippet": "<a href=\"/equal-opportunities-policy/\">",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "boundingRect": {
+                        "left": 986,
+                        "top": 11038,
+                        "height": 21,
+                        "right": 1305,
+                        "width": 319,
+                        "bottom": 11059
+                      },
+                      "type": "node",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,5,LI,0,A"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "snippet": "<a href=\"/equal-opportunities-policy/\">",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,5,LI,0,A",
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "lhId": "1-66-A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "boundingRect": {
+                  "right": 1305,
+                  "left": 986,
+                  "width": 319,
+                  "height": 21,
+                  "top": 11038,
+                  "bottom": 11059
+                }
+              },
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"/isms-policy/\">",
+                      "type": "node",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-65-A",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,4,LI,0,A",
+                      "boundingRect": {
+                        "top": 11017,
+                        "width": 319,
+                        "height": 21,
+                        "left": 986,
+                        "bottom": 11038,
+                        "right": 1305
+                      },
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "lhId": "1-67-A",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,6,LI,0,A",
+                      "snippet": "<a href=\"/environmental-policy/\">",
+                      "type": "node",
+                      "boundingRect": {
+                        "top": 11059,
+                        "width": 319,
+                        "height": 21,
+                        "left": 986,
+                        "bottom": 11080,
+                        "right": 1305
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              }
+            },
+            {
+              "node": {
+                "lhId": "1-67-A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "snippet": "<a href=\"/environmental-policy/\">",
+                "boundingRect": {
+                  "bottom": 11080,
+                  "height": 21,
+                  "top": 11059,
+                  "width": 319,
+                  "right": 1305,
+                  "left": 986
+                },
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,6,LI,0,A",
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px."
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,5,LI,0,A",
+                      "boundingRect": {
+                        "width": 319,
+                        "height": 21,
+                        "right": 1305,
+                        "left": 986,
+                        "bottom": 11059,
+                        "top": 11038
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "type": "node",
+                      "snippet": "<a href=\"/equal-opportunities-policy/\">",
+                      "lhId": "1-66-A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "lhId": "1-68-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "top": 11080,
+                        "left": 986,
+                        "bottom": 11101,
+                        "height": 21,
+                        "width": 319,
+                        "right": 1305
+                      },
+                      "snippet": "<a href=\"/corporate-social-responsibility-sustainability-statement/\">",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,7,LI,0,A",
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                "boundingRect": {
+                  "bottom": 11101,
+                  "top": 11080,
+                  "right": 1305,
+                  "left": 986,
+                  "width": 319,
+                  "height": 21
+                },
+                "explanation": "Fix any of the following:\n  Target has insufficient size (318.8px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px.",
+                "snippet": "<a href=\"/corporate-social-responsibility-sustainability-statement/\">",
+                "lhId": "1-68-A",
+                "type": "node",
+                "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,7,LI,0,A",
+                "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a"
+              },
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"/environmental-policy/\">",
+                      "selector": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "lhId": "1-67-A",
+                      "type": "node",
+                      "boundingRect": {
+                        "bottom": 11080,
+                        "height": 21,
+                        "left": 986,
+                        "width": 319,
+                        "right": 1305,
+                        "top": 11059
+                      },
+                      "nodeLabel": "div.elementor-widget-container > ul.elementor-icon-list-items > li.elementor-icon-list-item > a",
+                      "path": "1,HTML,1,BODY,4,DIV,0,DIV,2,DIV,0,DIV,3,DIV,1,DIV,0,DIV,0,UL,6,LI,0,A"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              }
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "valueType": "node",
+              "label": "Failing Elements",
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "meta-viewport": {
+        "id": "meta-viewport",
+        "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+        "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-viewport).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "debugData": {
+            "tags": [
+              "cat.sensory-and-visual-cues",
+              "wcag2aa",
+              "wcag144",
+              "EN-301-549",
+              "EN-9.1.4.4",
+              "ACT"
+            ],
+            "type": "debugdata",
+            "impact": "critical"
+          },
+          "type": "table",
+          "headings": [
+            {
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              }
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "boundingRect": {
+                  "width": 0,
+                  "bottom": 0,
+                  "top": 0,
+                  "height": 0,
+                  "right": 0,
+                  "left": 0
+                },
+                "path": "1,HTML,0,HEAD,88,META",
+                "snippet": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">",
+                "lhId": "1-49-META",
+                "selector": "head > meta",
+                "nodeLabel": "head > meta",
+                "explanation": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+              }
+            }
+          ]
+        }
+      },
+      "table-fake-caption": {
+        "id": "table-fake-caption",
+        "title": "Tables use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the `[colspan]` attribute may improve the experience for screen reader users. [Learn more about captions](https://dequeuniversity.com/rules/axe/4.10/table-fake-caption).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "image-alt": {
+        "id": "image-alt",
+        "title": "Image elements have `[alt]` attributes",
+        "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": [
+            {
+              "valueType": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "aria-valid-attr": {
+        "id": "aria-valid-attr",
+        "title": "`[aria-*]` attributes are valid and not misspelled",
+        "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more about valid ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "type": "table",
+          "headings": [
+            {
+              "valueType": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "definition-list": {
+        "id": "definition-list",
+        "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>`, `<template>` or `<div>` elements.",
+        "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.10/definition-list).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "focus-traps": {
+        "id": "focus-traps",
+        "title": "User focus is not accidentally trapped in a region",
+        "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn how to avoid focus traps](https://developer.chrome.com/docs/lighthouse/accessibility/focus-traps/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "aria-toggle-field-name": {
+        "id": "aria-toggle-field-name",
+        "title": "ARIA toggle fields have accessible names",
+        "description": "When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about toggle fields](https://dequeuniversity.com/rules/axe/4.10/aria-toggle-field-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "focusable-controls": {
+        "id": "focusable-controls",
+        "title": "Interactive controls are keyboard focusable",
+        "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn how to make custom controls focusable](https://developer.chrome.com/docs/lighthouse/accessibility/focusable-controls/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "meta-refresh": {
+        "id": "meta-refresh",
+        "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+        "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more about the refresh meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-refresh).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "identical-links-same-purpose": {
+        "id": "identical-links-same-purpose",
+        "title": "Identical links have the same purpose.",
+        "description": "Links with the same destination should have the same description, to help users understand the link's purpose and decide whether to follow it. [Learn more about identical links](https://dequeuniversity.com/rules/axe/4.10/identical-links-same-purpose).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-allowed-attr": {
+        "id": "aria-allowed-attr",
+        "title": "`[aria-*]` attributes match their roles",
+        "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "key": "node",
+              "valueType": "node"
+            }
+          ],
+          "items": [],
+          "type": "table"
+        }
+      },
+      "frame-title": {
+        "id": "frame-title",
+        "title": "`<frame>` or `<iframe>` elements have a title",
+        "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more about frame titles](https://dequeuniversity.com/rules/axe/4.10/frame-title).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "type": "table",
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "valueType": "node",
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "aria-prohibited-attr": {
+        "id": "aria-prohibited-attr",
+        "title": "Elements use only permitted ARIA attributes",
+        "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              }
+            }
+          ],
+          "items": []
+        }
+      },
+      "aria-hidden-focus": {
+        "id": "aria-hidden-focus",
+        "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+        "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              }
+            }
+          ]
+        }
+      },
+      "document-title": {
+        "id": "document-title",
+        "title": "Document has a `<title>` element",
+        "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "label": "Failing Elements",
+              "valueType": "node"
+            }
+          ],
+          "items": []
+        }
+      },
+      "visual-order-follows-dom": {
+        "id": "visual-order-follows-dom",
+        "title": "Visual order on the page follows DOM order",
+        "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more about DOM and visual ordering](https://developer.chrome.com/docs/lighthouse/accessibility/visual-order-follows-dom/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "label-content-name-mismatch": {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels have matching accessible names.",
+        "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "link-name": {
+        "id": "link-name",
+        "title": "Links do not have a discernible name",
+        "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.10/link-name).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [
+            {
+              "node": {
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A",
+                "type": "node",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "lhId": "1-44-A",
+                "boundingRect": {
+                  "height": 27,
+                  "bottom": 68,
+                  "top": 42,
+                  "width": 64,
+                  "left": 30,
+                  "right": 94
+                },
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "snippet": "<a href=\"https://www.reodigital.com\">"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "snippet": "<a class=\"e-lottie__container__link\" href=\"#reo_intro\">",
+                "nodeLabel": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > a.e-lottie__container__link",
+                "lhId": "1-45-A",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > a.e-lottie__container__link",
+                "boundingRect": {
+                  "width": 80,
+                  "height": 16,
+                  "right": 708,
+                  "bottom": 464,
+                  "top": 448,
+                  "left": 628
+                },
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+              }
+            },
+            {
+              "node": {
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                "snippet": "<a href=\"https://www.reodigital.com/works/mercer/\">",
+                "boundingRect": {
+                  "top": 2203,
+                  "height": 316,
+                  "bottom": 2519,
+                  "left": 30,
+                  "right": 532,
+                  "width": 502
+                },
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "lhId": "1-1-A"
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "height": 314,
+                  "bottom": 2518,
+                  "top": 2203,
+                  "left": 552,
+                  "width": 753,
+                  "right": 1305
+                },
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "lhId": "1-5-A",
+                "type": "node",
+                "snippet": "<a href=\"https://www.reodigital.com/works/british-gas/\">",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                "lhId": "1-9-A",
+                "snippet": "<a href=\"https://www.reodigital.com/works/penhaligon/\">",
+                "type": "node",
+                "boundingRect": {
+                  "right": 830,
+                  "width": 800,
+                  "top": 2723,
+                  "bottom": 3226,
+                  "left": 30,
+                  "height": 503
+                },
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "snippet": "<a href=\"https://www.reodigital.com/works/rci-financial-services/\">",
+                "boundingRect": {
+                  "left": 30,
+                  "top": 3243,
+                  "bottom": 3717,
+                  "width": 753,
+                  "right": 783,
+                  "height": 473
+                },
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "lhId": "1-13-A",
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "snippet": "<a href=\"https://www.reodigital.com/works/molton-brown/\">",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                "boundingRect": {
+                  "bottom": 3453,
+                  "left": 803,
+                  "width": 502,
+                  "right": 1305,
+                  "height": 210,
+                  "top": 3243
+                },
+                "type": "node",
+                "lhId": "1-17-A",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "lhId": "1-21-A",
+                "boundingRect": {
+                  "right": 777,
+                  "left": 30,
+                  "top": 8406,
+                  "bottom": 8749,
+                  "width": 747,
+                  "height": 343
+                },
+                "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-traffic-report-only-shows-paid-s…\">",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A",
+                "type": "node"
+              }
+            },
+            {
+              "node": {
+                "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-traffic-report-only-shows-paid-s…\">",
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "nodeLabel": "div.elementor-element > div.elementor-widget-container > span.elementor-heading-title > a",
+                "selector": "div.elementor-element > div.elementor-widget-container > span.elementor-heading-title > a",
+                "boundingRect": {
+                  "top": 8848,
+                  "right": 80,
+                  "width": 0,
+                  "height": 0,
+                  "left": 80,
+                  "bottom": 8848
+                },
+                "lhId": "1-46-A",
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,2,DIV,0,DIV,0,SPAN,0,A"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-google-ads-data-not-showing/\">",
+                "lhId": "1-25-A",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "boundingRect": {
+                  "bottom": 8576,
+                  "top": 8406,
+                  "right": 971,
+                  "height": 170,
+                  "width": 143,
+                  "left": 827
+                },
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A"
+              }
+            },
+            {
+              "node": {
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "lhId": "1-47-A",
+                "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-undercounting-shopify-orders/\">",
+                "type": "node",
+                "boundingRect": {
+                  "bottom": 8771,
+                  "right": 971,
+                  "left": 827,
+                  "height": 170,
+                  "width": 143,
+                  "top": 8601
+                },
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A"
+              }
+            },
+            {
+              "node": {
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                "boundingRect": {
+                  "left": 827,
+                  "top": 8796,
+                  "height": 170,
+                  "bottom": 8966,
+                  "width": 143,
+                  "right": 971
+                },
+                "snippet": "<a href=\"https://www.reodigital.com/ga4-release-notes-explained-benchmarking/\">",
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,6,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A",
+                "lhId": "1-48-A"
+              }
+            }
+          ],
+          "headings": [
+            {
+              "valueType": "node",
+              "key": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "type": "table",
+          "debugData": {
+            "tags": [
+              "cat.name-role-value",
+              "wcag2a",
+              "wcag244",
+              "wcag412",
+              "section508",
+              "section508.22.a",
+              "TTv5",
+              "TT6.a",
+              "EN-301-549",
+              "EN-9.2.4.4",
+              "EN-9.4.1.2",
+              "ACT"
+            ],
+            "impact": "serious",
+            "type": "debugdata"
+          }
+        }
+      },
+      "select-name": {
+        "id": "select-name",
+        "title": "Select elements have associated label elements.",
+        "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.10/select-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-conditional-attr": {
+        "id": "aria-conditional-attr",
+        "title": "ARIA attributes are used as specified for the element's role",
+        "description": "Some ARIA attributes are only allowed on an element under certain conditions. [Learn more about conditional ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-conditional-attr).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "key": "node",
+              "valueType": "node"
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "duplicate-id-aria": {
+        "id": "duplicate-id-aria",
+        "title": "ARIA IDs are unique",
+        "description": "The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies. [Learn how to fix duplicate ARIA IDs](https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-required-attr": {
+        "id": "aria-required-attr",
+        "title": "`[role]`s have all required `[aria-*]` attributes",
+        "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.10/aria-required-attr).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "valueType": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "key": "node"
+            }
+          ],
+          "type": "table",
+          "items": []
+        }
+      },
+      "link-in-text-block": {
+        "id": "link-in-text-block",
+        "title": "Links are distinguishable without relying on color.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "type": "table",
+          "headings": [
+            {
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "label": "Failing Elements",
+              "valueType": "node",
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "heading-order": {
+        "id": "heading-order",
+        "title": "Heading elements are not in a sequentially-descending order",
+        "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [
+            {
+              "node": {
+                "nodeLabel": "Who we are",
+                "type": "node",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > h6.elementor-heading-title",
+                "lhId": "1-39-H6",
+                "snippet": "<h6 class=\"elementor-heading-title elementor-size-default\">",
+                "boundingRect": {
+                  "right": 668,
+                  "top": 190,
+                  "bottom": 220,
+                  "height": 30,
+                  "width": 259,
+                  "left": 409
+                },
+                "explanation": "Fix any of the following:\n  Heading order invalid",
+                "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,NAV,1,DIV,0,UL,1,LI,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,H6"
+              }
+            },
+            {
+              "node": {
+                "lhId": "1-40-H6",
+                "type": "node",
+                "nodeLabel": "CRO & Experimentation",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > h6.elementor-heading-title",
+                "boundingRect": {
+                  "left": 409,
+                  "right": 668,
+                  "top": 190,
+                  "bottom": 220,
+                  "width": 259,
+                  "height": 30
+                },
+                "explanation": "Fix any of the following:\n  Heading order invalid",
+                "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,NAV,1,DIV,0,UL,2,LI,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,H6",
+                "snippet": "<h6 class=\"elementor-heading-title elementor-size-default\">"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix any of the following:\n  Heading order invalid",
+                "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,NAV,1,DIV,0,UL,4,LI,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,H6",
+                "lhId": "1-41-H6",
+                "boundingRect": {
+                  "width": 367,
+                  "left": 511,
+                  "bottom": 334,
+                  "height": 30,
+                  "top": 304,
+                  "right": 878
+                },
+                "type": "node",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > h6.elementor-heading-title",
+                "snippet": "<h6 class=\"elementor-heading-title elementor-size-default\">",
+                "nodeLabel": "Search news by type"
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "height": 42,
+                  "right": 1305,
+                  "bottom": 5022,
+                  "width": 630,
+                  "left": 675,
+                  "top": 4980
+                },
+                "lhId": "1-42-H4",
+                "type": "node",
+                "snippet": "<h4 class=\"elementor-heading-title elementor-size-default\">",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,6,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,H4",
+                "nodeLabel": "CRO & Experimentation",
+                "explanation": "Fix any of the following:\n  Heading order invalid",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > h4.elementor-heading-title"
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "top": 8756,
+                  "height": 77,
+                  "left": 80,
+                  "right": 727,
+                  "bottom": 8833,
+                  "width": 647
+                },
+                "type": "node",
+                "lhId": "1-23-H4",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,H4",
+                "nodeLabel": "GA4 Agony Aunt: “Help! My GA4 Traffic Report Only Shows Paid Social!”",
+                "snippet": "<h4 class=\"elementor-heading-title elementor-size-default\">",
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > h4.elementor-heading-title",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "width": 314,
+                  "top": 8476,
+                  "right": 1305,
+                  "height": 90,
+                  "left": 991,
+                  "bottom": 8566
+                },
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > h6.elementor-heading-title",
+                "explanation": "Fix any of the following:\n  Heading order invalid",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,1,DIV,2,DIV,0,DIV,0,H6",
+                "nodeLabel": "GA4 Agony Aunt: “Oh no! My Google Ads data isn’t showing in GA4!”",
+                "lhId": "1-43-H6",
+                "type": "node",
+                "snippet": "<h6 class=\"elementor-heading-title elementor-size-default\">"
+              }
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              }
+            }
+          ],
+          "debugData": {
+            "tags": ["cat.semantics", "best-practice"],
+            "type": "debugdata",
+            "impact": "moderate"
+          }
+        }
+      },
+      "use-landmarks": {
+        "id": "use-landmarks",
+        "title": "HTML5 landmark elements are used to improve navigation",
+        "description": "Landmark elements (`<main>`, `<nav>`, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more about landmark elements](https://developer.chrome.com/docs/lighthouse/accessibility/use-landmarks/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "offscreen-content-hidden": {
+        "id": "offscreen-content-hidden",
+        "title": "Offscreen content is hidden from assistive technology",
+        "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn how to properly hide offscreen content](https://developer.chrome.com/docs/lighthouse/accessibility/offscreen-content-hidden/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "managed-focus": {
+        "id": "managed-focus",
+        "title": "The user's focus is directed to new content added to the page",
+        "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn how to direct focus to new content](https://developer.chrome.com/docs/lighthouse/accessibility/managed-focus/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "td-headers-attr": {
+        "id": "td-headers-attr",
+        "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more about the `headers` attribute](https://dequeuniversity.com/rules/axe/4.10/td-headers-attr).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "input-button-name": {
+        "id": "input-button-name",
+        "title": "Input buttons have discernible text.",
+        "description": "Adding discernable and accessible text to input buttons may help screen reader users understand the purpose of the input button. [Learn more about input buttons](https://dequeuniversity.com/rules/axe/4.10/input-button-name).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "key": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "valueType": "node"
+            }
+          ],
+          "items": [],
+          "type": "table"
+        }
+      },
+      "empty-heading": {
+        "id": "empty-heading",
+        "title": "All heading elements contain content.",
+        "description": "A heading with no content or inaccessible text prevent screen reader users from accessing information on the page's structure. [Learn more about headings](https://dequeuniversity.com/rules/axe/4.10/empty-heading).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "table-duplicate-name": {
+        "id": "table-duplicate-name",
+        "title": "Tables have different content in the summary attribute and `<caption>`.",
+        "description": "The summary attribute should describe the table structure, while `<caption>` should have the onscreen title. Accurate table mark-up helps users of screen readers. [Learn more about summary and caption](https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-valid-attr-value": {
+        "id": "aria-valid-attr-value",
+        "title": "`[aria-*]` attributes have valid values",
+        "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more about valid values for ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "headings": [
+            {
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements",
+              "valueType": "node",
+              "key": "node"
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "aria-text": {
+        "id": "aria-text",
+        "title": "Elements with the `role=text` attribute do not have focusable descendents.",
+        "description": "Adding `role=text` around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's focusable descendents will not be announced. [Learn more about the `role=text` attribute](https://dequeuniversity.com/rules/axe/4.10/aria-text).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "custom-controls-labels": {
+        "id": "custom-controls-labels",
+        "title": "Custom controls have associated labels",
+        "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more about custom controls and labels](https://developer.chrome.com/docs/lighthouse/accessibility/custom-controls-labels/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      },
+      "aria-roles": {
+        "id": "aria-roles",
+        "title": "`[role]` values are valid",
+        "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more about valid ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-roles).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              }
+            }
+          ]
+        }
+      },
+      "label": {
+        "id": "label",
+        "title": "Form elements have associated labels",
+        "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "headings": [
+            {
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements"
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "bypass": {
+        "id": "bypass",
+        "title": "The page contains a heading, skip link, or landmark region",
+        "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more about bypass blocks](https://dequeuniversity.com/rules/axe/4.10/bypass).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "form-field-multiple-labels": {
+        "id": "form-field-multiple-labels",
+        "title": "No form fields have multiple labels",
+        "description": "Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either the first, the last, or all of the labels. [Learn how to use form labels](https://dequeuniversity.com/rules/axe/4.10/form-field-multiple-labels).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "tabindex": {
+        "id": "tabindex",
+        "title": "No element has a `[tabindex]` value greater than 0",
+        "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.10/tabindex).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": [
+            {
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "key": "node",
+              "valueType": "node",
+              "label": "Failing Elements"
+            }
+          ]
+        }
+      },
+      "color-contrast": {
+        "id": "color-contrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "key": "node",
+              "label": "Failing Elements",
+              "valueType": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              }
+            }
+          ],
+          "debugData": {
+            "impact": "serious",
+            "tags": [
+              "cat.color",
+              "wcag2aa",
+              "wcag143",
+              "TTv5",
+              "TT13.c",
+              "EN-301-549",
+              "EN-9.1.4.3",
+              "ACT"
+            ],
+            "type": "debugdata"
+          },
+          "items": [
+            {
+              "node": {
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,2,DIV,0,DIV,0,SPAN,1,P,0,A",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.52 (foreground color: #9e9d9d, background color: #f7f7f7, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-traffic-report-only-shows-paid-s…\">",
+                "boundingRect": {
+                  "top": 8853,
+                  "left": 80,
+                  "width": 639,
+                  "bottom": 8923,
+                  "right": 719,
+                  "height": 70
+                },
+                "nodeLabel": "Dear Missing-Traffic Taylor, That’s frustrating! If your All Sessions traffic r…",
+                "lhId": "1-37-A",
+                "selector": "div.elementor-widget-container > span.elementor-heading-title > p > a",
+                "type": "node"
+              },
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV",
+                      "nodeLabel": "February 4, 2025\nGA4 Agony Aunt: “Help! My GA4 Traffic Report Only Shows Paid S…",
+                      "boundingRect": {
+                        "width": 747,
+                        "top": 8649,
+                        "left": 30,
+                        "height": 320,
+                        "bottom": 8969,
+                        "right": 777
+                      },
+                      "type": "node",
+                      "snippet": "<div class=\"elementor-element elementor-element-c79abbd e-flex e-con-boxed e-con e-chi…\" data-id=\"c79abbd\" data-element_type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">",
+                      "lhId": "1-38-DIV",
+                      "selector": "div.elementor-loop-container > div.elementor > div.elementor-element > div.elementor-element"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              }
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "aria-meter-name": {
+        "id": "aria-meter-name",
+        "title": "ARIA `meter` elements have accessible names",
+        "description": "When a meter element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `meter` elements](https://dequeuniversity.com/rules/axe/4.10/aria-meter-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-dialog-name": {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+        "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "type": "table",
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "key": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "valueType": "node"
+            }
+          ]
+        }
+      },
+      "aria-command-name": {
+        "id": "aria-command-name",
+        "title": "`button`, `link`, and `menuitem` elements have accessible names",
+        "description": "When an element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to make command elements more accessible](https://dequeuniversity.com/rules/axe/4.10/aria-command-name).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements"
+            }
+          ],
+          "type": "table",
+          "items": []
+        }
+      },
+      "aria-allowed-role": {
+        "id": "aria-allowed-role",
+        "title": "Uses ARIA roles only on compatible elements",
+        "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements"
+            }
+          ],
+          "items": []
+        }
+      },
+      "landmark-one-main": {
+        "id": "landmark-one-main",
+        "title": "Document has a main landmark.",
+        "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.10/landmark-one-main).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "button-name": {
+        "id": "button-name",
+        "title": "Buttons do not have an accessible name",
+        "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.10/button-name).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "debugData": {
+            "tags": [
+              "cat.name-role-value",
+              "wcag2a",
+              "wcag412",
+              "section508",
+              "section508.22.a",
+              "TTv5",
+              "TT6.a",
+              "EN-301-549",
+              "EN-9.4.1.2",
+              "ACT"
+            ],
+            "type": "debugdata",
+            "impact": "critical"
+          },
+          "items": [
+            {
+              "node": {
+                "lhId": "1-28-BUTTON",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "boundingRect": {
+                  "left": 80,
+                  "bottom": 4409,
+                  "width": 24,
+                  "top": 4395,
+                  "height": 14,
+                  "right": 104
+                },
+                "type": "node",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,0,BUTTON",
+                "snippet": "<button role=\"button\" class=\"owl-dot\">"
+              }
+            },
+            {
+              "node": {
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "snippet": "<button role=\"button\" class=\"owl-dot active\">",
+                "boundingRect": {
+                  "bottom": 4409,
+                  "width": 24,
+                  "height": 14,
+                  "top": 4395,
+                  "right": 128,
+                  "left": 104
+                },
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,1,BUTTON",
+                "lhId": "1-29-BUTTON",
+                "type": "node",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-30-BUTTON",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,2,BUTTON",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "boundingRect": {
+                  "left": 128,
+                  "right": 152,
+                  "bottom": 4409,
+                  "width": 24,
+                  "height": 14,
+                  "top": 4395
+                },
+                "snippet": "<button role=\"button\" class=\"owl-dot\">",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "width": 24,
+                  "left": 152,
+                  "height": 14,
+                  "right": 176,
+                  "bottom": 4409,
+                  "top": 4395
+                },
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,3,BUTTON",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "lhId": "1-31-BUTTON",
+                "snippet": "<button role=\"button\" class=\"owl-dot\">"
+              }
+            },
+            {
+              "node": {
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,4,BUTTON",
+                "lhId": "1-32-BUTTON",
+                "type": "node",
+                "snippet": "<button role=\"button\" class=\"owl-dot\">",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "boundingRect": {
+                  "top": 4395,
+                  "width": 24,
+                  "bottom": 4409,
+                  "height": 14,
+                  "left": 176,
+                  "right": 200
+                }
+              }
+            },
+            {
+              "node": {
+                "snippet": "<button role=\"button\" class=\"owl-dot\">",
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,5,BUTTON",
+                "boundingRect": {
+                  "left": 200,
+                  "right": 224,
+                  "width": 24,
+                  "top": 4395,
+                  "height": 14,
+                  "bottom": 4409
+                },
+                "lhId": "1-33-BUTTON",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot"
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "top": 4395,
+                  "bottom": 4409,
+                  "right": 248,
+                  "height": 14,
+                  "width": 24,
+                  "left": 224
+                },
+                "lhId": "1-34-BUTTON",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,6,BUTTON",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "type": "node",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "snippet": "<button role=\"button\" class=\"owl-dot\">",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              }
+            },
+            {
+              "node": {
+                "boundingRect": {
+                  "top": 4395,
+                  "right": 272,
+                  "height": 14,
+                  "bottom": 4409,
+                  "width": 24,
+                  "left": 248
+                },
+                "lhId": "1-35-BUTTON",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,7,BUTTON",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "type": "node",
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "snippet": "<button role=\"button\" class=\"owl-dot\">",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot"
+              }
+            },
+            {
+              "node": {
+                "lhId": "1-36-BUTTON",
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,2,DIV,8,BUTTON",
+                "snippet": "<button role=\"button\" class=\"owl-dot\">",
+                "boundingRect": {
+                  "width": 24,
+                  "right": 296,
+                  "left": 272,
+                  "top": 4395,
+                  "bottom": 4409,
+                  "height": 14
+                },
+                "nodeLabel": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot",
+                "selector": "div.agency_testimonials_loop > div.testimonial-carousel > div.owl-dots > button.owl-dot"
+              }
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "valueType": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "input-image-alt": {
+        "id": "input-image-alt",
+        "title": "`<input type=\"image\">` elements have `[alt]` text",
+        "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn about input image alt text](https://dequeuniversity.com/rules/axe/4.10/input-image-alt).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-hidden-body": {
+        "id": "aria-hidden-body",
+        "title": "`[aria-hidden=\"true\"]` is not present on the document `<body>`",
+        "description": "Assistive technologies, like screen readers, work inconsistently when `aria-hidden=\"true\"` is set on the document `<body>`. [Learn how `aria-hidden` affects the document body](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-body).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": [
+            {
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "valueType": "node",
+              "label": "Failing Elements",
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "valid-lang": {
+        "id": "valid-lang",
+        "title": "`[lang]` attributes have a valid value",
+        "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/valid-lang).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "html-has-lang": {
+        "id": "html-has-lang",
+        "title": "`<html>` element has a `[lang]` attribute",
+        "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-has-lang).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "valueType": "node",
+              "key": "node"
+            }
+          ],
+          "items": [],
+          "type": "table"
+        }
+      },
+      "aria-required-parent": {
+        "id": "aria-required-parent",
+        "title": "`[role]`s are contained by their required parent element",
+        "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.10/aria-required-parent).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-treeitem-name": {
+        "id": "aria-treeitem-name",
+        "title": "ARIA `treeitem` elements have accessible names",
+        "description": "When a `treeitem` element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about labeling `treeitem` elements](https://dequeuniversity.com/rules/axe/4.10/aria-treeitem-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "object-alt": {
+        "id": "object-alt",
+        "title": "`<object>` elements have alternate text",
+        "description": "Screen readers cannot translate non-text content. Adding alternate text to `<object>` elements helps screen readers convey meaning to users. [Learn more about alt text for `object` elements](https://dequeuniversity.com/rules/axe/4.10/object-alt).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "html-lang-valid": {
+        "id": "html-lang-valid",
+        "title": "`<html>` element has a valid value for its `[lang]` attribute",
+        "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-lang-valid).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              }
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "aria-required-children": {
+        "id": "aria-required-children",
+        "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.",
+        "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.10/aria-required-children).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "valueType": "node",
+              "key": "node",
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              }
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "boundingRect": {
+                        "width": 502,
+                        "right": 532,
+                        "bottom": 2519,
+                        "left": 30,
+                        "top": 2203,
+                        "height": 316
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/works/mercer/\">",
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                      "lhId": "1-1-A",
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "Building trust through biometrics by evaluating Mercer Master Trust’s AI Pensio…",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,UL",
+                      "boundingRect": {
+                        "top": 2577,
+                        "width": 442,
+                        "right": 502,
+                        "bottom": 2673,
+                        "left": 60,
+                        "height": 97
+                      },
+                      "type": "node",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "lhId": "1-2-UL"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "nodeLabel": "\"We had a fascinating and informative experience in REO’s Biometrics Lab. The a…",
+                      "lhId": "1-3-UL",
+                      "boundingRect": {
+                        "right": 502,
+                        "height": 109,
+                        "left": 60,
+                        "bottom": 2675,
+                        "top": 2567,
+                        "width": 442
+                      },
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,UL",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "lhId": "1-0-DIV",
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "boundingRect": {
+                  "right": 532,
+                  "height": 500,
+                  "bottom": 2703,
+                  "left": 30,
+                  "width": 502,
+                  "top": 2203
+                },
+                "nodeLabel": "\"We had a fascinating and informative experience in REO’s Biometrics Lab. The a…",
+                "type": "node",
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex]",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "boundingRect": {
+                        "width": 753,
+                        "left": 552,
+                        "bottom": 2518,
+                        "right": 1305,
+                        "top": 2203,
+                        "height": 314
+                      },
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/works/british-gas/\">",
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "lhId": "1-5-A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "type": "node",
+                      "boundingRect": {
+                        "width": 693,
+                        "bottom": 2673,
+                        "top": 2641,
+                        "left": 582,
+                        "height": 32,
+                        "right": 1275
+                      },
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "nodeLabel": "Driving quick and significant change to empower HomeCare customers",
+                      "lhId": "1-6-UL"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-7-UL",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "nodeLabel": "\"Our goal to swiftly elevate British Gas' digital presence quickly became a rea…",
+                      "boundingRect": {
+                        "bottom": 2713,
+                        "height": 82,
+                        "left": 582,
+                        "right": 1275,
+                        "top": 2631,
+                        "width": 693
+                      }
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex]",
+                "lhId": "1-4-DIV",
+                "type": "node",
+                "nodeLabel": "\"Our goal to swiftly elevate British Gas' digital presence quickly became a rea…",
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "boundingRect": {
+                  "left": 552,
+                  "width": 753,
+                  "top": 2203,
+                  "right": 1305,
+                  "bottom": 2703,
+                  "height": 500
+                },
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV"
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/works/penhaligon/\">",
+                      "boundingRect": {
+                        "left": 30,
+                        "right": 830,
+                        "bottom": 3226,
+                        "height": 503,
+                        "top": 2723,
+                        "width": 800
+                      },
+                      "lhId": "1-9-A",
+                      "type": "node",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "Penhaligon’s increases revenue per visitor by 46% with personalisation",
+                      "lhId": "1-10-UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,UL",
+                      "boundingRect": {
+                        "left": 60,
+                        "top": 3161,
+                        "right": 1275,
+                        "bottom": 3193,
+                        "width": 1215,
+                        "height": 32
+                      }
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "boundingRect": {
+                        "left": 60,
+                        "right": 1275,
+                        "width": 1215,
+                        "height": 54,
+                        "bottom": 3206,
+                        "top": 3151
+                      },
+                      "nodeLabel": "\"We were really impressed with the data insight project that highlighted the va…",
+                      "type": "node",
+                      "lhId": "1-11-UL",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "type": "node",
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "lhId": "1-8-DIV",
+                "boundingRect": {
+                  "bottom": 3223,
+                  "height": 500,
+                  "left": 30,
+                  "width": 1275,
+                  "top": 2723,
+                  "right": 1305
+                },
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV",
+                "nodeLabel": "\"We were really impressed with the data insight project that highlighted the va…",
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex]"
+              }
+            },
+            {
+              "subItems": {
+                "items": [
+                  {
+                    "relatedNode": {
+                      "snippet": "<a href=\"https://www.reodigital.com/works/rci-financial-services/\">",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A",
+                      "lhId": "1-13-A",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "type": "node",
+                      "boundingRect": {
+                        "height": 473,
+                        "width": 753,
+                        "top": 3243,
+                        "left": 30,
+                        "right": 783,
+                        "bottom": 3717
+                      },
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "boundingRect": {
+                        "width": 693,
+                        "bottom": 3713,
+                        "height": 65,
+                        "top": 3649,
+                        "left": 60,
+                        "right": 753
+                      },
+                      "type": "node",
+                      "nodeLabel": "Renault & Nissan finance arm RCI aligns product vision through user research",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,UL",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "lhId": "1-14-UL"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "\"The research and workshops conducted by REO allowed us to pause, have meaningf…",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "lhId": "1-15-UL",
+                      "boundingRect": {
+                        "right": 753,
+                        "height": 82,
+                        "left": 60,
+                        "width": 693,
+                        "top": 3639,
+                        "bottom": 3720
+                      },
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "type": "node"
+                    }
+                  }
+                ],
+                "type": "subitems"
+              },
+              "node": {
+                "type": "node",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,0,DIV",
+                "boundingRect": {
+                  "left": 30,
+                  "height": 500,
+                  "width": 753,
+                  "top": 3243,
+                  "right": 783,
+                  "bottom": 3743
+                },
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "lhId": "1-12-DIV",
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex]",
+                "nodeLabel": "\"The research and workshops conducted by REO allowed us to pause, have meaningf…"
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "lhId": "1-17-A",
+                      "snippet": "<a href=\"https://www.reodigital.com/works/molton-brown/\">",
+                      "boundingRect": {
+                        "height": 210,
+                        "width": 502,
+                        "right": 1305,
+                        "left": 803,
+                        "bottom": 3453,
+                        "top": 3243
+                      },
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "boundingRect": {
+                        "width": 442,
+                        "height": 65,
+                        "top": 3649,
+                        "right": 1275,
+                        "left": 833,
+                        "bottom": 3713
+                      },
+                      "lhId": "1-18-UL",
+                      "type": "node",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "nodeLabel": "Harnessing the power of 3 to accelerate Molton Brown’s revenue growth",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,UL"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items",
+                      "lhId": "1-19-UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items\">",
+                      "type": "node",
+                      "boundingRect": {
+                        "height": 163,
+                        "top": 3639,
+                        "width": 442,
+                        "left": 833,
+                        "right": 1275,
+                        "bottom": 3802
+                      },
+                      "nodeLabel": "\"Working with REO has allowed us to scale our experimentation programme, delive…",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,UL"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,4,DIV,0,DIV,3,DIV,0,DIV,1,DIV,0,DIV,0,DIV",
+                "boundingRect": {
+                  "bottom": 3743,
+                  "right": 1305,
+                  "left": 803,
+                  "height": 500,
+                  "top": 3243,
+                  "width": 502
+                },
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "lhId": "1-16-DIV",
+                "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "type": "node",
+                "nodeLabel": "\"Working with REO has allowed us to scale our experimentation programme, delive…",
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex]"
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A",
+                      "type": "node",
+                      "lhId": "1-21-A",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-traffic-report-only-shows-paid-s…\">",
+                      "boundingRect": {
+                        "bottom": 8749,
+                        "top": 8406,
+                        "right": 777,
+                        "height": 343,
+                        "left": 30,
+                        "width": 747
+                      },
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "February 4, 2025",
+                      "type": "node",
+                      "boundingRect": {
+                        "height": 26,
+                        "bottom": 8741,
+                        "right": 735,
+                        "width": 663,
+                        "top": 8715,
+                        "left": 72
+                      },
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > ul.elementor-inline-items",
+                      "snippet": "<ul class=\"elementor-inline-items elementor-icon-list-items elementor-post-info\">",
+                      "lhId": "1-22-UL",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,UL"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "GA4 Agony Aunt: “Help! My GA4 Traffic Report Only Shows Paid Social!”",
+                      "snippet": "<h4 class=\"elementor-heading-title elementor-size-default\">",
+                      "lhId": "1-23-H4",
+                      "type": "node",
+                      "selector": "div.e-con-inner > div.elementor-element > div.elementor-widget-container > h4.elementor-heading-title",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,H4",
+                      "boundingRect": {
+                        "right": 727,
+                        "top": 8756,
+                        "bottom": 8833,
+                        "height": 77,
+                        "width": 647,
+                        "left": 80
+                      }
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "type": "node",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "boundingRect": {
+                  "left": 30,
+                  "top": 8406,
+                  "right": 827,
+                  "width": 797,
+                  "height": 563,
+                  "bottom": 8969
+                },
+                "lhId": "1-20-DIV",
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex], h4[tabindex]",
+                "nodeLabel": "February 4, 2025\nGA4 Agony Aunt: “Help! My GA4 Traffic Report Only Shows Paid S…",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV"
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "lhId": "1-25-A",
+                      "type": "node",
+                      "nodeLabel": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "boundingRect": {
+                        "height": 170,
+                        "right": 971,
+                        "width": 143,
+                        "bottom": 8576,
+                        "left": 827,
+                        "top": 8406
+                      },
+                      "snippet": "<a href=\"https://www.reodigital.com/ga4-agony-aunt-google-ads-data-not-showing/\">",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > a",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "nodeLabel": "Agony Aunt",
+                      "type": "node",
+                      "snippet": "<ul class=\"elementor-inline-items elementor-icon-list-items elementor-post-info\">",
+                      "lhId": "1-26-UL",
+                      "boundingRect": {
+                        "bottom": 8441,
+                        "left": 991,
+                        "width": 314,
+                        "right": 1305,
+                        "top": 8406,
+                        "height": 35
+                      },
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,UL",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > ul.elementor-inline-items"
+                    }
+                  },
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,UL",
+                      "boundingRect": {
+                        "top": 8446,
+                        "width": 314,
+                        "left": 991,
+                        "bottom": 8471,
+                        "height": 26,
+                        "right": 1305
+                      },
+                      "lhId": "1-27-UL",
+                      "snippet": "<ul class=\"elementor-icon-list-items elementor-post-info\">",
+                      "nodeLabel": "January 31, 2025",
+                      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > ul.elementor-icon-list-items"
+                    }
+                  }
+                ]
+              },
+              "node": {
+                "explanation": "Fix any of the following:\n  Element has children which are not allowed: a[tabindex], ul[tabindex], h6[tabindex]",
+                "lhId": "1-24-DIV",
+                "type": "node",
+                "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > div.elementor-loop-container",
+                "path": "1,HTML,1,BODY,3,MAIN,0,DIV,0,DIV,9,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV",
+                "nodeLabel": "Agony Aunt\nJanuary 31, 2025\nGA4 Agony Aunt: “Oh no! My Google Ads data isn’t sh…",
+                "snippet": "<div class=\"elementor-loop-container elementor-grid\" role=\"list\">",
+                "boundingRect": {
+                  "width": 478,
+                  "bottom": 8966,
+                  "top": 8406,
+                  "height": 560,
+                  "right": 1305,
+                  "left": 827
+                }
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "tags": [
+              "cat.aria",
+              "wcag2a",
+              "wcag131",
+              "EN-301-549",
+              "EN-9.1.3.1"
+            ],
+            "impact": "critical"
+          }
+        }
+      },
+      "listitem": {
+        "id": "listitem",
+        "title": "List items (`<li>`) are contained within `<ul>`, `<ol>` or `<menu>` parent elements",
+        "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>`, `<ol>` or `<menu>` to be announced properly. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.10/listitem).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "valueType": "node",
+              "subItemsHeading": {
+                "valueType": "node",
+                "key": "relatedNode"
+              },
+              "label": "Failing Elements",
+              "key": "node"
+            }
+          ],
+          "items": [],
+          "type": "table"
+        }
+      },
+      "aria-input-field-name": {
+        "id": "aria-input-field-name",
+        "title": "ARIA input fields have accessible names",
+        "description": "When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn more about input field labels](https://dequeuniversity.com/rules/axe/4.10/aria-input-field-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "th-has-data-cells": {
+        "id": "th-has-data-cells",
+        "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+        "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more about table headers](https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "skip-link": {
+        "id": "skip-link",
+        "title": "Skip links are focusable.",
+        "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.10/skip-link).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "items": [],
+          "headings": [
+            {
+              "label": "Failing Elements",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "valueType": "node",
+              "key": "node"
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "dlitem": {
+        "id": "dlitem",
+        "title": "Definition list items are wrapped in `<dl>` elements",
+        "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn how to structure definition lists correctly](https://dequeuniversity.com/rules/axe/4.10/dlitem).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "html-xml-lang-mismatch": {
+        "id": "html-xml-lang-mismatch",
+        "title": "`<html>` element has an `[xml:lang]` attribute with the same base language as the `[lang]` attribute.",
+        "description": "If the webpage does not specify a consistent language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-xml-lang-mismatch).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "aria-tooltip-name": {
+        "id": "aria-tooltip-name",
+        "title": "ARIA `tooltip` elements have accessible names",
+        "description": "When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to name `tooltip` elements](https://dequeuniversity.com/rules/axe/4.10/aria-tooltip-name).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "custom-controls-roles": {
+        "id": "custom-controls-roles",
+        "title": "Custom controls have ARIA roles",
+        "description": "Custom interactive controls have appropriate ARIA roles. [Learn how to add roles to custom controls](https://developer.chrome.com/docs/lighthouse/accessibility/custom-control-roles/).",
+        "score": null,
+        "scoreDisplayMode": "manual"
+      }
+    }
+  }
+}

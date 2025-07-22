@@ -47,39 +47,88 @@ function cleanDescription(text: string): string {
   return result;
 }
 
-function extractMetrics(data: any) {
-  const audits = data.lighthouseResult.audits;
+function extractGroupedMetrics(data: any, detailed: boolean = false) {
+  const passed: Record<string, any> = {};
+  const failed: Record<string, any> = {};
+  const notApplicable: Record<string, any> = {};
 
-  const accessibilityAuditRefs =
-    data.lighthouseResult.categories["accessibility"].auditRefs;
+  const { categories, categoryGroups, audits } = data.lighthouseResult;
+  const accessibilityScore = categories["accessibility"].score * 100;
+  const auditRefs = categories["accessibility"].auditRefs;
 
-  const accessibilityAuditIds = new Set(
-    accessibilityAuditRefs.map((ref: any) => ref.id)
-  );
+  // Process each audit and categorize based on score
+  Object.entries(audits).forEach(([auditId, audit]: [string, any]) => {
+    const { score, id, title, description, scoreDisplayMode } = audit;
 
-  // Extract and group diagnostics for accessibility
-  const diagnostics = Object.entries(audits)
-    .filter(([id, _]) => accessibilityAuditIds.has(id))
-    .map(([id, audit]: any) => ({
-      id,
-      title: cleanDescription(audit.title),
-      description: cleanDescription(audit.description),
-      displayValue: audit.displayValue || null,
-    }));
+    // Find the category group for this audit
+    const auditRef = auditRefs.find((ref: any) => ref.id === auditId);
+    const categoryGroupId = auditRef?.group;
+    const categoryWeight = auditRef?.weight;
+    const categoryGroup = categoryGroups[categoryGroupId];
+
+    const auditInfo = detailed
+      ? {
+          id,
+          title: cleanDescription(title),
+          description: cleanDescription(description),
+          scoreDisplayMode,
+          score,
+          weight: categoryWeight,
+          details: audit.details,
+        }
+      : {
+          id,
+          title: cleanDescription(title),
+          description: cleanDescription(description),
+          scoreDisplayMode,
+          score,
+          weight: categoryWeight,
+        };
+
+    // Categorize based on score
+    if (score === 1) {
+      // Passed
+      if (!passed[categoryGroupId]) {
+        passed[categoryGroupId] = {
+          title: categoryGroup?.title || "Unknown",
+          description: categoryGroup?.description || "",
+          audits: {},
+        };
+      }
+      passed[categoryGroupId].audits[auditId] = auditInfo;
+    } else if (score === 0) {
+      // Failed
+      if (!failed[categoryGroupId]) {
+        failed[categoryGroupId] = {
+          title: categoryGroup?.title || "Unknown",
+          description: categoryGroup?.description || "",
+          audits: {},
+        };
+      }
+      failed[categoryGroupId].audits[auditId] = auditInfo;
+    } else if (score === null) {
+      // Not applicable
+      if (!notApplicable[categoryGroupId]) {
+        notApplicable[categoryGroupId] = {
+          title: categoryGroup?.title || "Unknown",
+          description: categoryGroup?.description || "",
+          audits: {},
+        };
+      }
+      notApplicable[categoryGroupId].audits[auditId] = auditInfo;
+    }
+  });
 
   return {
-    metrics: {
-      accessibilityScore:
-        data.lighthouseResult.categories["accessibility"].score * 100,
-    },
-    diagnostics: {
-      accessibility: diagnostics,
-    },
+    accessibilityScore,
+    passed,
+    failed,
+    notApplicable,
   };
 }
 
 export const getPagespeedInsights = async (req: Request, res: Response) => {
-  const { url, device } = req.query;
+  const { url, device, detailed } = req.query;
 
   if (!url || typeof url !== "string" || !isValidUrl(url)) {
     return res.status(400).json({ message: "Invalid URL provided." });
@@ -93,6 +142,8 @@ export const getPagespeedInsights = async (req: Request, res: Response) => {
 
   const normalizedUrl = addHttpsIfMissing(url);
 
+  const isDetailed = detailed === "true";
+
   try {
     if (!device) {
       // Both desktop and mobile
@@ -105,8 +156,8 @@ export const getPagespeedInsights = async (req: Request, res: Response) => {
         ),
       ]);
 
-      const desktop = extractMetrics(desktopRes.data);
-      const mobile = extractMetrics(mobileRes.data);
+      const desktop = extractGroupedMetrics(desktopRes.data, isDetailed);
+      const mobile = extractGroupedMetrics(mobileRes.data, isDetailed);
 
       return res
         .status(200)
@@ -117,10 +168,12 @@ export const getPagespeedInsights = async (req: Request, res: Response) => {
         `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?category=accessibility&url=${normalizedUrl}&key=${PAGESPEED_API_KEY}&strategy=${device}`
       );
 
-      const result = extractMetrics(response.data);
-      return res
-        .status(200)
-        .json({ url: normalizedUrl, result: { [device.toString()]: result } });
+      return res.status(200).json({
+        url: normalizedUrl,
+        result: {
+          [device.toString()]: extractGroupedMetrics(response.data, isDetailed),
+        },
+      });
     }
   } catch (error: any) {
     console.error("PageSpeed Insights error:", error.message);
