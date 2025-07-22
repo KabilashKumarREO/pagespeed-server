@@ -1,0 +1,151 @@
+/*
+import axios from "axios";
+import { Request, Response } from "express";
+import { PAGESPEED_API_KEY } from "../keys";
+
+function addHttpsIfMissing(url: string): string {
+  return /^https?:\/\//i.test(url) ? url : `https://${url}`;
+}
+
+function isValidUrl(domain: string): boolean {
+  const parts = domain.split(".");
+
+  if (
+    parts.length < 2 || // needs at least one dot
+    parts[0].length < 3 || // at least 3 characters before the first dot
+    parts[parts.length - 1].length < 2 // last segment atleast 2 characters
+  ) {
+    return false;
+  }
+  return true;
+}
+
+function cleanDescription(text: string): string {
+  if (!text) return text;
+
+  // Decode escaped angle brackets
+  let result = text.replace(/\\u003c/g, "<").replace(/\\u003e/g, ">");
+
+  // Convert markdown-style links to anchor tags
+  result = result.replace(
+    /\[([^\]]+)]\((https?:\/\/[^\s)]+)\)/g,
+    `<a href='$2' target='_blank'>$1</a>`
+  );
+
+  return result;
+}
+
+function extractMetrics(data: any) {
+  const audits = data.lighthouseResult.audits;
+
+  const accessibilityAuditRefs =
+    data.lighthouseResult.categories["accessibility"].auditRefs;
+
+  const accessibilityAuditIds = new Set(
+    accessibilityAuditRefs.map((ref: any) => ref.id)
+  );
+
+  // Extract and group diagnostics for accessibility
+  const diagnostics = Object.entries(audits)
+    .filter(([id, _]) => accessibilityAuditIds.has(id))
+    .map(([id, audit]: any) => ({
+      id,
+      title: cleanDescription(audit.title),
+      description: cleanDescription(audit.description),
+      displayValue: audit.displayValue || null,
+    }));
+
+  return {
+    metrics: {
+      firstContentfulPaint: {
+        value: audits["first-contentful-paint"].displayValue,
+        score: audits["first-contentful-paint"].score,
+      },
+      speedIndex: {
+        value: audits["speed-index"].displayValue,
+        score: audits["speed-index"].score * 100,
+      },
+      largestContentfulPaint: {
+        value: audits["largest-contentful-paint"].displayValue,
+        score: audits["largest-contentful-paint"].score * 100,
+      },
+      totalBlockingTime: {
+        value: audits["total-blocking-time"].displayValue,
+        score: audits["total-blocking-time"].score * 100,
+      },
+      cumulativeLayoutShift: {
+        value: audits["cumulative-layout-shift"].displayValue,
+        score: audits["cumulative-layout-shift"].score * 100,
+      },
+      timeToInteractive: {
+        value: audits["interactive"].displayValue,
+        score: audits["interactive"].score * 100,
+      },
+    },
+    scores: {
+      performance: data.lighthouseResult.categories.performance.score * 100,
+      accessibility:
+        data.lighthouseResult.categories["accessibility"].score * 100,
+      seo: data.lighthouseResult.categories["seo"].score * 100,
+      bestPractices:
+        data.lighthouseResult.categories["best-practices"].score * 100,
+    },
+    diagnostics: {
+      accessilbity: diagnostics,
+    },
+  };
+}
+
+export const getPagespeedInsights = async (req: Request, res: Response) => {
+  const { url, device } = req.query;
+
+  if (!url || typeof url !== "string" || !isValidUrl(url)) {
+    return res.status(400).json({ message: "Invalid URL provided." });
+  }
+  if (
+    device != undefined &&
+    !["desktop", "mobile"].includes(device?.toString())
+  ) {
+    return res.status(400).json({ message: "Invalid device." });
+  }
+
+  const normalizedUrl = addHttpsIfMissing(url);
+
+  try {
+    if (!device) {
+      // Both desktop and mobile
+      const [desktopRes, mobileRes] = await Promise.all([
+        axios.get(
+          `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?category=performance&category=accessibility&category=seo&category=best-practices&url=${normalizedUrl}&key=${PAGESPEED_API_KEY}&strategy=desktop`
+        ),
+        axios.get(
+          `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?category=performance&category=accessibility&category=seo&category=best-practices&url=${normalizedUrl}&key=${PAGESPEED_API_KEY}&strategy=mobile`
+        ),
+      ]);
+
+      const desktop = extractMetrics(desktopRes.data);
+      const mobile = extractMetrics(mobileRes.data);
+
+      return res
+        .status(200)
+        .json({ url: normalizedUrl, result: { desktop, mobile } });
+    } else {
+      // Single device
+      const response = await axios.get(
+        `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?category=performance&category=accessibility&category=seo&category=best-practices&url=${normalizedUrl}&key=${PAGESPEED_API_KEY}&strategy=${device}`
+      );
+
+      const result = extractMetrics(response.data);
+      return res
+        .status(200)
+        .json({ url: normalizedUrl, result: { [device.toString()]: result } });
+    }
+  } catch (error: any) {
+    console.error("PageSpeed Insights error:", error.message);
+    return res.status(500).json({
+      message: "Failed to fetch PageSpeed Insights.",
+      error: error?.response?.data || error.message,
+    });
+  }
+};
+*/
